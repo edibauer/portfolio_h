@@ -1,0 +1,161 @@
+---
+---
+<section id="home" style="display: flex; flex-grow: 1; align-items: center; justify-content: center; padding: 3rem 1rem;">
+  <div class="text-center max-w-2xl">
+    <h1 style="font-size: 2.25rem; font-weight: bold; color: var(--text-neon-purple); margin-bottom: 1rem;">Decodificando el Mañana: Portafolio de Edibaldo Ramírez</h1>
+    <div class="terminal" style="font-size: 1.25rem; text-align: left;">
+      <p class="typewriter" style="display: inline-block; border-right: 2px solid var(--text-neon-green);">whoami: Desarrollador SQL, SAP y Analista de Datos.<br>Entusiasta de la Ciberseguridad e Inteligencia Artificial.</p>
+    </div>
+    <p class="text-gray" style="margin-top: 1rem;">Acompáñame a descubrir mi trayectoria en el panorama tecnológico, donde cada iniciativa es un logro que demuestra mi habilidad para innovar y abordar retos complejos. Aquí encontrarás parte de mi experiencia en el desarrollo de soluciones SAP y análisis de datos, incluyendo también  la intensa pasión y entusiasmo que me impulsan la ciberseguridad e inteligencia artificial.</p>
+  </div>
+</section>
+<style> 
+  :root {
+    --bg-dark: #0a0a0a;
+    --text-neon-green: #0f0;
+    --text-neon-purple: #a855f7;
+    --bg-section: #1a1a1a;
+    --shadow-neon: 0 0 10px rgba(0, 255, 0, 0.2);
+    --shadow-hover: 0 0 10px rgba(168, 85, 247, 0.2);
+  }
+  body {
+    font-family: 'Share Tech Mono', monospace;
+    background: var(--bg-dark);
+    color: var(--text-neon-green);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  nav {
+    background: var(--bg-section);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: var(--shadow-neon);
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-neon-green);
+  }
+  .nav-links a {
+    color: var(--text-neon-green);
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover {
+    color: var(--text-neon-purple);
+  }
+  .glitch {
+    position: relative;
+    animation: glitch 1s linear infinite;
+  }
+  @keyframes glitch {
+    2%, 64% { transform: translate(2px, 0) skew(0deg); }
+    4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+    62% { transform: translate(0, 0) skew(5deg); }
+  }
+  .terminal::before {
+    content: '$ ';
+    color: var(--text-neon-green);
+  }
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--text-neon-green); }
+  }
+  section {
+    padding: 3rem 1rem;
+  }
+  h1, h2, h3, h4 {
+    color: var(--text-neon-purple);
+  }
+  .section-bg {
+    background: var(--bg-section);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  .card {
+    background: var(--bg-section);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-neon);
+    transition: box-shadow 0.3s;
+  }
+  .card:hover {
+    box-shadow: var(--shadow-hover);
+  }
+  .card a {
+    color: var(--text-neon-purple);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .card a:hover {
+    color: var(--text-neon-green);
+  }
+  .text-gray {
+    color: #999;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .max-w-2xl {
+    max-width: 672px;
+    margin: 0 auto;
+  }
+  .max-w-3xl {
+    max-width: 896px;
+    margin: 0 auto;
+  }
+  .list-disc {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  footer {
+    background: var(--bg-section);
+    padding: 1rem;
+    text-align: center;
+    color: #999;
+    margin-top: auto;
+  }
+  footer a {
+    color: var(--text-neon-green);
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  footer a:hover {
+    color: var(--text-neon-purple);
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .nav-links a {
+      margin-left: 0.5rem;
+    }
+  }
+</style>

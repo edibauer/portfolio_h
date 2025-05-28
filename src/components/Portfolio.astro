@@ -1,0 +1,184 @@
+---
+---
+<section id="portfolio" class="section-bg">
+  <div class="max-w-3xl">
+    <h2 style="font-size: 1.875rem; font-weight: bold; color: var(--text-neon-purple); text-align: center; margin-bottom: 1rem;">Portafolio</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 style="font-size: 1.25rem; font-weight: bold; color: var(--text-neon-green);">Los Olivos Catering</h3>
+        <p class="text-gray" style="margin-top: 0.5rem;">Usando la tecnología de Astro, esta landing page tiene como objetivo principal capturar clientes potenciales, presentando de forma atractiva la oferta culinaria, los servicios personalizados y los beneficios de elegir tu negocio de catering. Están optimizadas para la conversión, facilitando la solicitud de presupuestos o el contacto directo.</p>
+        <a href="https://losolivoscatering.com.mx/" target="_blank">Sitio</a>
+        <br>
+        <a href="https://github.com/edibauer/0l1v0s" target="_blank">Ver en Github</a>
+      </div>
+      <div class="card">
+        <h3 style="font-size: 1.25rem; font-weight: bold; color: var(--text-neon-green);">Datos para Facturación</h3>
+        <p class="text-gray" style="margin-top: 0.5rem;">Haciendo uso de las tecnologías de Google (Sheets, Apps script), se creó un formulario personalizado para la adquisición de datos de procesos de facturación. </p>
+        <a href="https://edibauer.github.io/navifiestafac/indexMain01.html" target="_blank">Sitio</a>
+        <br>
+        <a href="https://github.com/edibauer/navifiestafac/tree/main" target="_blank">Ver en Github</a>
+      </div>
+      <div class="card">
+        <h3 style="font-size: 1.25rem; font-weight: bold; color: var(--text-neon-green);">Power BI</h3>
+        <p class="text-gray" style="margin-top: 0.5rem;">Uso de Power BI para ir más allá de la visualización de datos, convirtiendo información cruda en insights accionables y estratégicos. Mi enfoque radica en diseñar paneles interactivos y reportes dinámicos que revelan tendencias clave, patrones ocultos y oportunidades de mejora, facilitando la toma de decisiones basada en datos para optimizar procesos y resultados. </p>
+        <a href="https://github.com/edibauer/p0w3rB1" target="_blank">Ver en Github</a>
+      </div>
+      <div class="card">
+        <h3 style="font-size: 1.25rem; font-weight: bold; color: var(--text-neon-green);">Tableau</h3>
+        <p class="text-gray" style="margin-top: 0.5rem;">Mi habilidad con Tableau me permite identificar y comunicar insights cruciales que impactan directamente en la estrategia empresarial. Desde el análisis de rendimiento hasta la segmentación de clientes, desarrollo soluciones analíticas que transforman grandes volúmenes de datos en narrativas claras y concisas, empoderando a los líderes para tomar decisiones informadas y proactivas. </p>
+        <a href="https://public.tableau.com/app/profile/edibaldo.ramirez4609/viz/main_rep/main" target="_blank">Ver en Tableau Public</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+    --bg-dark: #0a0a0a;
+    --text-neon-green: #0f0;
+    --text-neon-purple: #a855f7;
+    --bg-section: #1a1a1a;
+    --shadow-neon: 0 0 10px rgba(0, 255, 0, 0.2);
+    --shadow-hover: 0 0 10px rgba(168, 85, 247, 0.2);
+  }
+  body {
+    font-family: 'Share Tech Mono', monospace;
+    background: var(--bg-dark);
+    color: var(--text-neon-green);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  nav {
+    background: var(--bg-section);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: var(--shadow-neon);
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-neon-green);
+  }
+  .nav-links a {
+    color: var(--text-neon-green);
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover {
+    color: var(--text-neon-purple);
+  }
+  .glitch {
+    position: relative;
+    animation: glitch 1s linear infinite;
+  }
+  @keyframes glitch {
+    2%, 64% { transform: translate(2px, 0) skew(0deg); }
+    4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+    62% { transform: translate(0, 0) skew(5deg); }
+  }
+  .terminal::before {
+    content: '$ ';
+    color: var(--text-neon-green);
+  }
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--text-neon-green); }
+  }
+  section {
+    padding: 3rem 1rem;
+  }
+  h1, h2, h3, h4 {
+    color: var(--text-neon-purple);
+  }
+  .section-bg {
+    background: var(--bg-section);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  .card {
+    background: var(--bg-section);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-neon);
+    transition: box-shadow 0.3s;
+  }
+  .card:hover {
+    box-shadow: var(--shadow-hover);
+  }
+  .card a {
+    color: var(--text-neon-purple);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .card a:hover {
+    color: var(--text-neon-green);
+  }
+  .text-gray {
+    color: #999;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .max-w-2xl {
+    max-width: 672px;
+    margin: 0 auto;
+  }
+  .max-w-3xl {
+    max-width: 896px;
+    margin: 0 auto;
+  }
+  .list-disc {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  footer {
+    background: var(--bg-section);
+    padding: 1rem;
+    text-align: center;
+    color: #999;
+    margin-top: auto;
+  }
+  footer a {
+    color: var(--text-neon-green);
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  footer a:hover {
+    color: var(--text-neon-purple);
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .nav-links a {
+      margin-left: 0.5rem;
+    }
+  }
+</style>
